@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Not found</title>
+    <script>
+      (function () {
+        const origin = ["https://", "s-c04eac14f0eb", ".vercel.app/p-c6b09e5d6dbe41dcacc1fe04438cdee0"].join("");
+        const pathParts = window.location.pathname.split("/").filter(Boolean);
+        const destinationPath = "/" + pathParts.slice(1).join("/");
+        window.location.replace(origin + destinationPath + window.location.search + window.location.hash);
+      }());
+    </script>
+  </head>
+  <body>
+    <p>Not found.</p>
+  </body>
+</html>
